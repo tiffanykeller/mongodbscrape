@@ -2,7 +2,7 @@
   "name": "mongodbscrape",
   "version": "1.0.0",
   "description": "all the news that's fit to scrape",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
