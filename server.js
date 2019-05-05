@@ -6,7 +6,7 @@ var exphbs = require("express-handlebars");
 var mongoose = require("mongoose");
 var logger = require("morgan");
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8000;
 
 // Initialize Express
 var app = express();
@@ -35,10 +35,9 @@ require("./routes/apiRoutes")(app);
 // Start the server
 app.listen(PORT, function() {
     console.log(
-      "==> 🌎  Listening on port  Visit in your browser.",
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
       PORT,
       PORT
     );
   });
-    
   
