@@ -33,9 +33,12 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 
 // Start the server
-app.listen(process.env.PORT || 3000, function(){
-	console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+app.listen(PORT, function() {
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      PORT,
+      PORT
+    );
   });
-    
     
   
