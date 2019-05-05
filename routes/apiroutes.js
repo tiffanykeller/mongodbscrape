@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/kellerfittoscrape";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 module.exports = function (app) {
