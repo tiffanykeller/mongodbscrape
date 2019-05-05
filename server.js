@@ -35,8 +35,8 @@ require("./routes/apiRoutes")(app);
 // Start the server
 app.listen(PORT, function() {
   console.log(
-    "Listening on port 3000. Visit http://localhost:3000 in your browser.",
-    PORT,
-    PORT
+    "Listening on port 3000",
+    
+    
   );
 });
