@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Handlebars
-app.set("views", "./views");
+app.set('views', './views');
 app.engine(
   "handlebars",
   exphbs({
@@ -30,7 +30,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-require("./routes/apiRoutes")(app);
+require('./routes/apiRoutes')(app);
 
 // Start the server
 app.listen(PORT, function() {
