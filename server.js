@@ -33,11 +33,8 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 
 // Start the server
-app.listen(PORT, function() {
-    console.log(
-      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-      PORT,
-      PORT
-    );
-  });
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
+  
   
