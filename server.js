@@ -1,10 +1,11 @@
 // Dependencies
-
+require('dotenv').config();
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
 var mongoose = require("mongoose");
 var logger = require("morgan");
+
 
 var PORT = process.env.PORT || 8000;
 
